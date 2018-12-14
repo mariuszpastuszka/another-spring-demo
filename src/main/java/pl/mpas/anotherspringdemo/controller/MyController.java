@@ -20,4 +20,13 @@ public class MyController {
 
         return "car";
     }
+
+    @GetMapping("/me")
+    public String me(Model model) {
+
+        model.addAttribute("name", "Mariusz");
+        model.addAttribute("surname", "P.");
+
+        return "me";
+    }
 }
